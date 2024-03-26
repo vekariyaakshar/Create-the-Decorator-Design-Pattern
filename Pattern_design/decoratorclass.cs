@@ -6,11 +6,11 @@ public abstract class Decorator<T> : IComponent<T>
 
         public Decorator(IComponent<T> component)
         {
-            this.component = component;
+            _component = component;
         }
 
         public virtual T GetText()
         {
-            return component.GetText();
+            return _component.GetText();
         }
     }
