@@ -1,4 +1,7 @@
-﻿var component = new ConcreteComponent();
+﻿using Create the Decorator Design Pattern.ConcreteComponent;
+using Create the Decorator Design Pattern.Pattern_design;
+
+    var component = new ConcreteComponent();
 
     var plainDecorator = new PlainDecorator(component);
     var upperCaseDecorator = new UpperCaseDecorator(component);
