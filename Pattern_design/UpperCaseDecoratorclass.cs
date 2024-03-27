@@ -1,5 +1,5 @@
  namespace Pattern_design
- 
+ {
  public class UpperCaseDecorator : Decorator<string>
     {
         public UpperCaseDecorator(IComponent<string> component) : base(component) { }
@@ -9,3 +9,4 @@
             return base.GetText().ToUpper();
         }
     }
+ }
